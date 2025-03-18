@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-04-22T08:00:00+05:30");  // April 22, 2025, 8:00 AM IST
+const targetDate = new Date("2025-04-22T08:10:00+05:30");  // April 22, 2025, 8:10 AM IST
 
 function updateCountdown() {
     try {
