@@ -17,7 +17,7 @@ function updateCountdown() {
 
         document.getElementById("Days").innerText = days.toString().padStart(2, '0');
         document.getElementById("Hours").innerText = hours.toString().padStart(2, '0');
-        document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');  // Fixed ID
+        document.getElementById("Minutes").innerText = minutes.toString().padStart(2, '0');  // Fixed ID
         document.getElementById("Seconds").innerText = seconds.toString().padStart(2, '0');
     } catch (error) {
         console.error("Countdown Error:", error);
