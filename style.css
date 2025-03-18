@@ -1,0 +1,89 @@
+/* Animated Colorful Background */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(-45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffee, #0048ff, #9b00ff, #ff0084);
+    background-size: 400% 400%;
+    animation: bg-animation 10s infinite alternate;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Background Animation */
+@keyframes bg-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Countdown Container */
+.countdown-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Title */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.6);
+    background: linear-gradient(90deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffee, #0048ff, #9b00ff, #ff0084);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Countdown Timer */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Time Box */
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+    width: 90px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+/* Number Styling */
+.time-box span {
+    display: block;
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px white;
+    animation: neon-glow 2s infinite alternate;
+}
+
+/* Neon Glow Effect */
+@keyframes neon-glow {
+    0% { color: #ff0000; text-shadow: 0px 0px 15px #ff0000; }
+    20% { color: #ff7300; text-shadow: 0px 0px 15px #ff7300; }
+    40% { color: #fffb00; text-shadow: 0px 0px 15px #fffb00; }
+    60% { color: #48ff00; text-shadow: 0px 0px 15px #48ff00; }
+    80% { color: #00ffee; text-shadow: 0px 0px 15px #00ffee; }
+    100% { color: #0048ff; text-shadow: 0px 0px 15px #0048ff; }
+}
+
+/* Label Styling */
+.time-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Hover Effects */
+.time-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
+}
